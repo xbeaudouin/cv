@@ -1,0 +1,258 @@
+\documentclass[a4paper,11pt]{cv4tw}% options are inherited from article class, and automatically given to this class
+%\usetheme[optional scheme]{theme}
+%\usetheme[minuit]{sharp}
+\usetheme[tan]{sharp}
+% Not happy with the default style, or bullet ? Define yours !
+\setmystyle[missionbullet]{\color{soft}$>$~~}
+\setmystyle[assetbullet]{\color{icons}\faBook}
+% \setmystyle[fieldratefull]{\color{icons}\faCircle}
+% \setmystyle[fieldrateempty]{\color{icons}\faCircleBlank}
+% If you need a custom contact, you can define a bullet here :
+\setmystyle[custom0bullet]{\color{icons}\faBolt}
+\usepackage[utf8]{inputenc}
+%\academictitle{PhD}
+\firstname{Xavier}
+\lastname{Beaudouin}
+% \quote{\itshape ``En France, on exhibe des farceurs \'{e}trangers, et \`{a} l'\'{e}tranger, des farceurs fran\c cais~!''}
+
+% \cvpicture{./samplepic.jpg}
+% Add up to 10 assets (0 to 9)
+\setcvasset[0]{dual skills}
+\setcvasset[1]{curious}
+\setcvasset[2]{team player and autonomous}
+\setcvasset[3]{enthusiast}
+% \setcvasset[3]{\emph{TOP5} most-translated author}
+%
+% \setcvcontact[custom0]{In progress\ldots}
+\setcvcontact[email]{kiwi-cv@oav.net}
+\setcvcontact[homepagessl]{oav.net}
+\setcvcontact[cellphone]{+33 6 6263 3366}
+\setcvcontact[phone]{+33 9 5323 0103}
+% \setcvcontact[fax]{+33 9 08 02 18 88}
+%\setcvcontact[skype]{} not yet available
+%\setcvcontact[vk]{}
+%\setcvcontact[pinterest]{}
+%\setcvcontact[facebook]{}
+% \setcvcontact[googleplus]{+JulesVerne}
+
+%\setcvcontact[linkedin]{ngoralski}
+\setcvcontact[twitter]{xbeaudouin}
+\setcvcontact[github]{xbeaudouin}
+\setcvcontact[spokenlanguages]{fr,en}
+\setcvcontact[age]{November 6th 1972}
+\setcvcontact[address]{21 rue du Plateau\\54400 Longwy\\France}
+\title{System \& Network\\Engineer}
+
+\begin{document}
+
+
+	\section{Skills}
+
+	\begin{fields}{}{3}{5}
+	\field{System}{4}
+	\field{Network}{4}
+	\field{Monitoring}{3}
+	\field{IT Infrastructure}{4}
+	\field{Development}{3}
+	\field{Security}{4}
+	\field{Project Management}{2}
+	\end{fields}
+
+
+	\begin{skills}{}
+	\skill[Systems]{FreeBSD, OpenBSD, Linux, Mac OS X, Windows}
+	\skill[Network]{TCP/IP (IPv4 \& IPv6), Cisco (IOS, NXOS, IOS XR, ...), Juniper, Ubiquity, Wanguard, Arbor}
+	\skill[Routing Protocols]{BGP, BGP Flowspec, OSPF, ISIS, PIM}
+	\skill[SAN/NAS]{NetApp, Isilon, Samba, iSCSI, FCP, FCAL, FCoE, Nexenta}
+	\skill[LoadBalancers]{F5 Big/IP, Foundry ServerIron/ADX, Aloha, Relayd, nginx}
+	\skill[Firewall]{Ipfw, pf, pfSense}
+	\skill[Programming]{Perl, Shell, C, python, HTML, SQL, lua, arduino, git}
+	\skill[Virtualization]{VMWare ESX, Xen, Qemu, bhyve, UCS}
+	\skill[Other]{Librenms, Observium, puppet}
+	\end{skills}
+
+	\section{Experiences}
+
+	\story{Network \& Systems Engineer}{Gandi}{Sep 2015 - Jan 2017\\Strassen, Luxembourg}
+	{Cisco ASR, Nexus 5k/7k, 65xx\\Brocade ADX, F5, Aloha\\BGP Flowspec, OSPF, Netflow\\Debian, FreeBSD\\Arbor, Wanguard}
+		{ Backbone redesign
+		\begin{missions}
+			\item Changed from cold to hot potato of the backbone
+			\item Transit, Peering, IPv4 marked, Ripe work \& automation
+			\item DDoS handling with automatics strategies
+			\item Network accounting and financial reports
+			\item Technological solutions deployments to reduce operational costs
+			\item Technical solutions advisor for corporate sellers
+			\item Expert in Load balancers
+			\item Supermicro Hardware guru
+		\end{missions}
+	}
+
+	\story{Network \& Systems Engineer}{Horizon Software}{Feb 2013 - Sep 2015\\Paris}
+	{Cisco, Netscreen\\VMWare ESX, Proxmox, P2V, Veeam\\Ubuntu, Debian, Windows, Nexenta\\Samba, Active Directory, Puppet, Observium, LDAP, Rancid}
+		{ IT Securization / Rationalization / P2V 
+		\begin{missions}
+			\item Setting up a small business server room
+			\item OpenLDAP to Active Directory bridge
+			\item Migrating netscreen to dual pfsense firewall
+			\item Automation of all linux
+			\item Network Management System with Observium
+			\item Authentication Unification with LDAP \& AD
+			\item VPN access for road runners and remote users
+			\item Security officer
+		\end{missions}
+	}
+
+	\story{R\&D Engineer}{AFNIC}{Jun 2012 - Jan 2013\\ Montigny-le-Bretonneux}
+	{Juniper\\python, dns, node.js}
+		{
+		\begin{missions}
+			\item Team leadership of R\&D engineers on official publication with ANSSI \& AFNIC
+			\item DNS R\&D
+			\item Link of production world and R\&D world
+			\item Designing and developping of a web UI to DNSWitness data
+		\end{missions}
+	}
+
+
+	\story{CTO}{Teclib'}{Oct 2011 - May 2012\\ Paris}
+	{Cisco\\Debian, FreeBSD, Windows\\VMWare ESXi\\Netgraph, vtun}
+		{
+		\begin{missions}
+			\item Managed a team composed of 4 network \& systems administrators
+			\item Technological solutions deployments to reduce operational costs
+			\item Patnerships with NetApp, Cisco, VMWare, Juniper, ...
+			\item Calls for Tenders replys
+			\item Sustained/presales engineer Systems \& Network Solutions
+			\item Designer of SaaS, Managed Hosting \& Security Solutions
+			\item R\&D on new technological solutions for Customers
+			\item Encrypted L2 VPN over ip
+			\item Customer's network migration and QoS over low bandwith xDSL
+		\end{missions}
+	}
+
+
+	\story{CTO}{So-Priv\'e Cloud Computing \/ OutScale}{Feb 2010 - May 2011\\ Paris}
+	{Cisco UCS, Nexus, Force10, Brocade\\Xen 4.0.1, VMWare ESXi\\NFS/RDMA, NexentaStor, Isilon, NetApp Cluster\\PXE, Kickstart, RPM}
+		{
+		\begin{missions}
+			\item Managed a team composed of 3 developers and engineers
+			\item Architect of a cloud computing platform : AMPQ, network, storage, datacenter
+			\item Consulting for datacenter choices and day to day administration
+			\item Architect of cloud computing platform v2 with Cisco UCS, Nexus, private cloud
+			\item RIPE work, IPv4 et IPv6, peering and transits
+			\item Designed an hybrid storage engine based with ZFS \& SSD.
+			\item Automatization of installation of nodes with PXE, Kickstart \& RPM
+		\end{missions}
+	}
+
+
+	\story{Network \& Linux Manager}{Capital Fund Management}{Mar 2007 - Feb 2010\\ Paris}
+	{Cisco, Juniper, Brocade, CWDM\\BGP, OSPF, PIM\\Debian, RedHat, FreeBSD, OpenBSD\\RPM, Kickstart, ZFS\\ISC-NTPd, Nagios\\OPRA, NYSE}
+		{
+		\begin{missions}
+			\item Complete redesign of the network (2 atlantics links, 7 datacenters, 7 fibers, ...)
+			\item Complete redesign of the internet access: PI, AS, RIPE, firewall \& proxies
+			\item Designed and deployed the new trading architecture based on multicast
+			\item Deployed Sun Grid Engine cluster to allow computing of financial data 
+			\item Internal Linux server administration (300 to 500 servers)
+			\item Industrialization of the Linux Redhat installation process
+			\item Deployed ISC-NTPd (stratum 2)
+			\item ZFS based file servers specifications
+			\item Installation of opensource monitoring systems 	
+			\item Anycasted sensible services: DNS, PXE, DHCP
+		\end{missions}
+	}
+
+
+	\story{Network \& Hosting Manager}{Kheops Organisation}{Jan 2006 - Mar 2007\\ Le Plessis Robinson}
+	{Cisco, Brocade, Fortigate\\BGP, OSPF, CWDM, Netflow\\FreeBSD, Debian\\DNS, Radius, routers2.cgi\\Netapp, CIFS, iSCSI}
+		{
+		\begin{missions}
+			\item Complete redesign of the network backbone from a L2 system to complete L3
+			\item xDSL collect using LNS and Radius
+			\item 120sqm Datacenter operations : planning with third party, customer's access
+			\item Designed and deployed strategical ISP services
+			\item Expert in network and Unix for company's customers
+			\item Research about making redundant xDSL access for customers
+			\item Deployment of storage solutions with Netapp
+			\item Sustained for customers and internal network problems
+			\item Managed a small team of part time employee and trainees
+		\end{missions}
+	}
+
+
+	\story{Network \& Systems Architect}{Atradius (Groupe Etoile)}{Jul 2005 - Jun 2006\\ Levallois}
+	{AIX, Linux, Windows\\Citrix, BEA/Weblogic, Samba, Keepalived}
+		{
+		\begin{missions}
+			\item Disaster recovery plan design and deployment
+			\item BEA/Weblogic administrator, AIX, Linux \& Citrix administrator
+			\item Expert in System and Network technologies for a 4 persons team
+			\item Technological solutions deployments to reduce operational costs
+		\end{missions}
+	}
+
+	\story{Project Team Leader}{Tiscali Enterprises (Cable \& Wireless / ISDnet)}{Jan 2000 - May 2005\\ Paris}
+	{F5, Foundry Networks, Cisco\\FreeBSD, Solaris, Linux, BSDi\\Postfix, Sendmail, Bind\\NetApp\\Caudium\\Pike, C}
+		{
+		\begin{missions}
+			\item Architect and researcher for all B2B systems with security in mind.
+			\item Sustained engineer for: load balancers, switching, OS, OSS \& storage
+			\item Managed a team of 2 pike developers
+			\item Project leader of Open Source webmail software : CAMAS
+			\item B2B platforms: industrial web hosting, webmail and homepage system, ...
+			\item Administrator \& Security officier of B2B Platform
+		\end{missions}
+	}
+
+	\story{Network \& Systems Administrator and Architect}{Int\'egra (Ippolis Informatique)}{Dec 1998 - Dec 1999\\ Paris}
+	{Cisco\\Linux, OpenBSD\\Firewall}
+		{
+		\begin{missions}
+			\item Securing, fiabilization of a 3 media plaform with OpenBSD and Linux
+			\item Redesign the internal L2 networks
+			\item Installed the backbone and managed daily peering work
+			\item Mail server under Linux with webmail and web interface to handle provisionning
+			\item Planning and IP renumbering for moving the production platfrom to a new site
+			\item Merge plateform with mother's company
+		\end{missions}
+	}
+
+	\story{Network \& Systems Administrator and Architect}{Soci\'et\'e des Editions Historiques et Culturelles}{Jul 1997 - Dec 1998\\ Paris}
+	{Cisco\\Solaris, Linux\\mail, mail2fax, webmail\\firewall\\sendmail, bind, apache}
+		{
+		\begin{missions}
+			\item Director of Operations for the Internet platform
+			\item Created and deployed an internet portal from French Historical "Patrimoine"
+			\item Deployed mail services : mail, mail to fax, firewall, webmail
+			\item Deployed routing access and services associated
+			\item Attempted to create a company with this portal
+		\end{missions}
+	}
+
+	\story{Network \& Systems Administrator / Professor}{Ecole Centrale d'Electronique}{Sep 1995 - Feb 1997\\ Paris}
+	{C\\mail\\NFS\\Page Web\\Security\\Cisco}
+		{
+		\begin{missions}
+			\item C Language professor for the first year students in "BTS Electronic": 4h weekly
+			\item Implemented mail, Internet Services, official website, Internet access
+			\item Cisco access and configuration with an exclusive internet access partnership
+			\item Backup administrator for the entire network and servers of the school
+		\end{missions}
+	}
+
+
+	\section{Education \& Certifications}
+	\story{Computer \& Network Engineering degree}{Ecole Centrale d'Electronique}{1993-1997\\Paris}{}{}
+	\story{Associate Degree in Electronics (BTS Electronique)}{Lyc\'ee Jeanne d'Arc}{1991-1993\\Vitr\'e, France}{}{}
+	\story{French High School Diploma in Electronics (Baccalaur\'eat F2)}{Lyc\'ee Sacr\'es C\oe{}urs}{1990-1991\\Saint-Brieuc, France}{}{}
+
+	\section{Miscellaneaous}
+	\begin{skills}{}
+	\skill[Car]{B Driving License}
+	\skill[Hobbies]{Scuba diving (Level 1), Trekking and foreign travels}
+	\skill[IT Hobbies]{RIPE Member, FRnOG "Member", arduino coding, domotic}
+	\end{skills}
+
+\end{document}
