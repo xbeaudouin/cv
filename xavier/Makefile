@@ -2,7 +2,7 @@ CVNAME?=xbeaudouin
 CVTHEME?=sharp
 LATEX=xelatex
 
-export TEXINPUTS=.:../cv4tw:
+export TEXINPUTS=.:../../cv4tw:
 #export TTFONTS = .;$TEXMF/fonts/{truetype,opentype}//;$OSFONTDIR//
 #export OPENTYPEFONTS = .;$TEXMF/fonts/{opentype,truetype}//;$OSFONTDIR//
 
