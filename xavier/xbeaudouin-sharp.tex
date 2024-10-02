@@ -2,11 +2,12 @@
 %\usetheme[optional scheme]{theme}
 %\usetheme[minuit]{sharp}
 \usetheme[tan]{sharp}
+\usepackage{soul}
 % Not happy with the default style, or bullet ? Define yours !
 \setmystyle[missionbullet]{\color{soft}$>$~~}
 \setmystyle[assetbullet]{\color{icons}\faBook}
-% \setmystyle[fieldratefull]{\color{icons}\faCircle}
-% \setmystyle[fieldrateempty]{\color{icons}\faCircleBlank}
+\setmystyle[fieldratefull]{\color{icons}\faCircle}
+\setmystyle[fieldrateempty]{\color{icons}\faCircleO}
 % If you need a custom contact, you can define a bullet here :
 \setmystyle[custom0bullet]{\color{icons}\faBolt}
 \usepackage[utf8]{inputenc}
@@ -14,7 +15,7 @@
 \firstname{Xavier}
 \lastname{Beaudouin}
 % \quote{\itshape ``En France, on exhibe des farceurs \'{e}trangers, et \`{a} l'\'{e}tranger, des farceurs fran\c cais~!''}
-\quote{\itshape 20+ years of Networks \& Opensource Systems Administrator }
+\quote{\itshape 25+ years of Networks \& Opensource Systems Administrator}
 
 % \cvpicture{./samplepic.jpg}
 % Add up to 10 assets (0 to 9)
@@ -46,9 +47,6 @@
 
 \begin{document}
 
-
-	\section{Skills}
-
 	\begin{fields}{}{3}{5}
 	\field{System}{4}
 	\field{Network}{4}
@@ -56,29 +54,36 @@
 	\field{IT Infrastructure}{4}
 	\field{Development}{3}
 	\field{Security}{4}
-	\field{Project Management}{2}
+	\field{Project Management}{3}
 	\end{fields}
 
 
+	\section{Skills}
 	\begin{skills}{}
-	\skill[Systems]{FreeBSD, OpenBSD, Linux, Mac OS X, Windows}
-	\skill[Network]{TCP/IP (IPv4 \& IPv6), Cisco (IOS *, NXOS, ...), Juniper, Ubiquiti, Wanguard, Arbor, Mikrotik}
+	\skill[Systems]{FreeBSD, OpenBSD, Linux, Mac OS X, \st{Windows}}
+	\skill[Network]{TCP/IP (IPv4 \& IPv6), Cisco, Juniper, Ubiquiti, Wanguard, Arbor, Mikrotik}
 	\skill[Routing Protocols]{BGP, BGP Flowspec, OSPF, ISIS, PIM}
-	\skill[SAN/NAS]{NetApp, Isilon, Samba, iSCSI, FCP, FCAL, FCoE, Nexenta}
-	\skill[LoadBalancers]{F5 Big/IP, Foundry ServerIron/ADX, Aloha, Relayd, nginx}
-	\skill[Firewall]{Ipfw, pf, pfSense, Sophos, ASA}
+	\skill[SAN/NAS]{ZFS, NetApp, Isilon, Samba, iSCSI, FCP, FCAL, FCoE, Nexenta}
+	\skill[LoadBalancers]{nginx, F5 Big/IP, Foundry ServerIron/ADX, Aloha, Relayd}
+	\skill[Firewall]{pf, pfSense, opnsense, DynFi, pf, Sophos, ASA}
 	\skill[Programming]{Perl, Shell, C, python, HTML, SQL, lua, arduino, git}
-	\skill[Virtualization]{VMWare ESX, Xen, Qemu, bhyve, UCS, Veeam}
-	\skill[Other]{Librenms, Observium, puppet}
-	\skill[FreeBSD]{Poudriere, BastilleBSD, VNET}
+	\skill[Virtualization]{bhyve, VMWare ESX, qemu, Veeam, proxmox}
+	\skill[Automation]{puppet, saltstack, ansible}
+	\skill[Monitoring]{Librenms, Observium, nagios, Centreon, Zabbix}
+	\skill[FreeBSD]{Poudriere, BastilleBSD, VNET, jails, bastillebsd}
+	\skill[Mail]{postfix, dovecot, amavisd-new, zimbra, ...}
 	\end{skills}
 
 	\section{Experiences}
-	\story{System Administratori -- Full Remote}{Klara Inc}{Since May 2023\\Canada}
-	{FreeBSD}
+	\story{System Administrator -- Full Remote}{Klara Inc}{Since May 2023\\Canada}
+	{FreeBSD\\ZFS\\Poudriere\\Gitlab}
 		{
 		\begin{missions}
 			\item FreeBSD System administration
+			\item FreeBSD Security patches
+			\item Gitlab Server maintenance on FreeBSD
+			\item Networking expertise
+			\item Upstreaming FreeBSD patches and ports
 		\end{missions}
 	}
 
@@ -106,7 +111,7 @@
 	}
 
 	\story{Network \& Systems Engineer}{Hotcity SA}{Nov 2017 - Oct 2022\\Luxembourg}
-	{Cisco, Extreme\\FreeBSD,Debian\\RIPE, BGP, Netflow\\Wifi 802.1x\\Puppet\\VMWare, ZFS}
+	{Cisco, Extreme\\Ubiquiti, Cisco WLC\\FreeBSD, Debian\\RIPE, BGP, Netflow\\Wifi 802.1x\\Puppet\\VMWare, ZFS}
 		{Hosting and network platform 
 		\begin{missions}
 			\item Move the VM from VdL to Internal ESX (hardware, storage, ...)
@@ -151,7 +156,7 @@
 	}
 
 	\story{Network \& Systems Engineer}{Horizon Software}{Feb 2013 - Sep 2015\\Paris}
-	{Cisco, Netscreen\\VMWare ESX, Proxmox, P2V, Veeam\\Ubuntu, Debian, Windows, Nexenta\\Samba, Active Directory, Puppet, Observium, LDAP, Rancid}
+	{Cisco, Netscreen\\VMWare ESX, Proxmox, P2V, Veeam\\Ubuntu, Debian, Windows, Nexenta\\Samba, Active Directory, Puppet, Observium, LDAP, Rancid, Zimbra}
 		{ IT Securization / Rationalization / P2V 
 		\begin{missions}
 			\item Setting up a small business server room
@@ -178,7 +183,7 @@
 
 
 	\story{CTO}{Teclib'}{Oct 2011 - May 2012\\ Paris}
-	{Cisco\\Debian, FreeBSD, Windows\\VMWare ESXi\\Netgraph, vtun}
+	{Cisco\\Debian, FreeBSD, Windows\\VMWare ESXi\\Netgraph, vtun, Zimbra}
 		{
 		\begin{missions}
 			\item Managed a team composed of 4 network \& systems administrators
@@ -195,7 +200,7 @@
 
 
 	\story{CTO}{So-Priv\'e Cloud Computing - OutScale}{Feb 2010 - May 2011\\ Paris}
-	{Cisco UCS, Nexus, Force10, Brocade\\Xen 4.0.1, VMWare ESXi\\NFS/RDMA, NexentaStor, Isilon, NetApp Cluster\\PXE, Kickstart, RPM}
+	{Cisco UCS, Nexus, Force10, Brocade\\Xen 4.0.1, VMWare ESXi\\NFS/RDMA, Infiniband\\NexentaStor, Isilon, NetApp Cluster\\PXE, Kickstart, RPM}
 		{ Startup company - Ownership
 		\begin{missions}
 			\item Managed a team composed of 3 developers and engineers
@@ -210,7 +215,7 @@
 
 
 	\story{Network \& Linux Manager}{Capital Fund Management}{Mar 2007 - Feb 2010\\ Paris}
-	{Cisco, Juniper, Brocade, CWDM\\BGP, OSPF, PIM\\Debian, RedHat, FreeBSD, OpenBSD\\RPM, Kickstart, ZFS\\ISC-NTPd, Nagios\\OPRA, NYSE}
+	{Cisco, Juniper, Brocade, CWDM\\BGP, OSPF, PIM\\Debian, RedHat, FreeBSD, OpenBSD\\RPM, Kickstart, ZFS\\ISC-NTPd, Nagios\\OPRA, NYSE\\Infiniband}
 		{
 		\begin{missions}
 			\item Complete redesign of the network (2 atlantics links, 7 datacenters, 7 fibers, ...)
@@ -314,7 +319,8 @@
 	\begin{skills}{}
 	\skill[Car]{B Driving License}
 	\skill[Hobbies]{Scuba diving (Level 1), Trekking and foreign travels}
-	\skill[IT Hobbies]{RIPE Member, FRnOG "Member", arduino coding, domotic}
+	\skill[IT Hobbies]{RIPE Member, FRnOG "Member", arduino coding, domoticz, home automation}
+	\skill[Energy]{Victron Energy Self Professional}
 	\end{skills}
 
 \end{document}
