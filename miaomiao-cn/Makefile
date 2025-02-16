@@ -1,4 +1,4 @@
-CVNAME?=xbeaudouin
+CVNAME?=mbeaudouin
 CVTHEME?=sharp
 LATEX=xelatex
 
@@ -21,4 +21,4 @@ proper:
 $(CVNAME)-$(CVTHEME).pdf: $(CVNAME)-$(CVTHEME).tex
 	@$(LATEX) $<
 	#run it twice, to fix page numbers
-	#@$(LATEX) $<
+	@$(LATEX) $<
